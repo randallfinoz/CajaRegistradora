@@ -18,7 +18,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
-import javax.swing.text.Document;
+import com.itextpdf.text.Document;
 
 
 
@@ -357,7 +357,7 @@ public class Punto_de_venta extends javax.swing.JFrame {
         Document documento = new Document();
         try{
             //GUARDAMOS LA RUTA EN CUALQUIER DISPOSITIVO
-            PdfWriter.getInstance(documento, new FileOutputStream( "C:\\Users\\randa\\OneDrive\\Escritorio\\Ticket.pdf"));
+            PdfWriter.getInstance(documento, new FileOutputStream( "C:\\Users\\randa\\OneDrive\\Documentos\\NetBeansProjects\\CajaRegistradora\\src\\Examen\\documentos\\Ticket.pdf"));
             
             //ESCRIBIMOS EL DOCUMENTO
             Paragraph parrafo = new Paragraph();
